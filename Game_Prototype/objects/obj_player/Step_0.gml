@@ -38,15 +38,26 @@ y = y + vsp;
 
 //Animation
 if (!place_meeting(x, y + 1, obj_invisiableWall)){
-	sprite_index = spr_playerJump;
+	//sprite_index = spr_playerJump;
 	image_speed = 0;
 	if (vsp > 0) image_index = 1; else image_index = 0;
 } else {
 	image_speed = 1;
-	if(hsp == 0)sprite_index = spr_player; else	sprite_index = spr_playerRun;
+	//if(hsp == 0)sprite_index = spr_player; else	sprite_index = spr_playerRun;
 }
-if (hsp != 0) image_xscale = sign(hsp);
+if (hsp != 0){
+	image_xscale = sign(hsp);
+}
 
+//bullet
+if (keyboard_check_pressed(ord("Z")) && cooldown >= 20){
+	instance_create_depth(x, y, 1, obj_bullet);
+	cooldown = 0;
+}
+cooldown += 1;
 
+if (keyboard_check(ord("X"))){
+	sprite_index = spr_melee;
+}
 
 
