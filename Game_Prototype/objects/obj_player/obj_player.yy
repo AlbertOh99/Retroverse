@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "spr_player",
-    "path": "sprites/spr_player/spr_player.yy",
+    "name": "spr_axelDie",
+    "path": "sprites/spr_axelDie/spr_axelDie.yy",
   },
   "persistent": false,
   "parentObjectId": null,

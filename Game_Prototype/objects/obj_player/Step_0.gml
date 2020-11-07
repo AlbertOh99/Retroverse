@@ -37,14 +37,14 @@ y = y + vsp;
 
 
 //Animation
-if (!place_meeting(x, y + 1, obj_invisiableWall)){
-	//sprite_index = spr_playerJump;
+/*if (!place_meeting(x, y + 1, obj_invisiableWall)){
+	//sprite_index = spr_axelJump;
 	image_speed = 0;
 	if (vsp > 0) image_index = 1; else image_index = 0;
 } else {
 	image_speed = 1;
-	//if(hsp == 0)sprite_index = spr_player; else	sprite_index = spr_playerRun;
-}
+	//if(hsp == 0)sprite_index = spr_axel; else	sprite_index = spr_axel Run;//(fix the run part)
+}*/
 if (hsp != 0){
 	image_xscale = sign(hsp);
 }
