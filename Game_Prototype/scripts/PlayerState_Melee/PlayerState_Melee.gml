@@ -58,6 +58,7 @@ if(sprite_index != spr_axel_melee){
 			}
 		}
 	}
+	
 	ds_list_destroy(hitByAttackNow);
 	mask_index = spr_axel;
 

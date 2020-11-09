@@ -1,6 +1,6 @@
 {
   "compression": 3,
-  "volume": 0.05,
+  "volume": 1.0,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -11,7 +11,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_explosion.wav",
-  "duration": 1.722098,
+  "duration": 3.045635,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
