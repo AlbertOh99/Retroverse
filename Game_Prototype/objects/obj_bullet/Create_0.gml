@@ -1,5 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
-direction = point_direction(x, y, x + obj_player.image_xscale, y);
-speed = 8;
-image_angle = direction;
+image_index = 3;
+image_speed = 0;

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_bullet",
-    "path": "sprites/spr_bullet/spr_bullet.yy",
+    "name": "spr_ammo",
+    "path": "sprites/spr_ammo/spr_ammo.yy",
   },
   "solid": false,
   "visible": true,
