@@ -37,8 +37,10 @@ y = y + vsp;
 if(sprite_index != spr_axel_melee){
 	sprite_index = spr_axel_melee;
 	image_index = 0;
+	audio_play_sound(snd_axel_sword, 1, false); 
 	ds_list_clear(hitByAttack);
 }
+
 	//created a new sprite to find the attack hitbox
 	mask_index = spr_axel_meleeHB;
 	var hitByAttackNow = ds_list_create();

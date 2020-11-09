@@ -1,4 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
-obj_bullet.image_index = 3;
+
+if(holder != 3 && bullets != 3){
+holder += 1;
+obj_bullet.image_index = holder;
+alarm[2] = 20;
+} else {
 bullets = 3;
+obj_reload.image_index = 0;
+}

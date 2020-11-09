@@ -9,4 +9,7 @@ switch (enemy_state)
 	case ENEMYSTATE.HIT:
 	EnemyState_Hit();
 	break;
-}
+	case ENEMYSTATE.SHOOT:
+	EnemyState_Shoot();
+	break;
+}                 

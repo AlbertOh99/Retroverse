@@ -5,7 +5,9 @@
 if (health >= 1 && invincible = 0){
 health -= 1;
 obj_health.image_index = health;
-invincible = 1;
+invincible = 1; 
 alarm[1] = 90; //time player is invincible
 alarm[0] = 1;
+audio_play_sound(snd_axel_hurt2, 1, false); 
+state = PLAYERSTATE.DEAD
 }

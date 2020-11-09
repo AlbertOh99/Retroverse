@@ -15,9 +15,18 @@ switch (state)
 	case PLAYERSTATE.SHOOT:
 	PlayerState_Shoot();
 	break;
+	case PLAYERSTATE.HIT:
+	PlayerState_Hit();
+	break;
+	case PLAYERSTATE.DEAD:
+	PlayerState_Dead();
+	break;
 }
 
- if (bullets == 0 &&  keyboard_check_pressed(ord("R"))){
-	//reload
-	alarm[2] = 30; 
+ if (bullets == 0){
+	obj_reload.image_index  = 1;
+	if (keyboard_check_pressed(ord("R"))){
+	holder = 0;
+	alarm[2] = 20; 
+	}
 }

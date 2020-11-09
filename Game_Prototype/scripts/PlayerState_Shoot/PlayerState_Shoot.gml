@@ -36,10 +36,11 @@ y = y + vsp;
 //shoot animation
 if(sprite_index != spr_axel_shoot && bullets > 0){
 	bullets -= 1;
+	obj_bullet.image_index = bullets;
+	audio_play_sound(snd_axel_shoot, 1, false); 
 	sprite_index = spr_axel_shoot;
 	image_index = 0;
 	instance_create_layer(x, y-100, "Bullet", obj_axel_bullet)
-	obj_bullet .image_index = bullets;
 } else
 	cooldown = 0;
 	
