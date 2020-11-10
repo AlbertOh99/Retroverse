@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyState_Shoot(){
 	//shoot animation
+	alarm[0] = 200;
 if(sprite_index != spr_enemy_shoot){
 	audio_play_sound(snd_enemy_shoot, 1, false); 
 	sprite_index = spr_enemy_shoot;
